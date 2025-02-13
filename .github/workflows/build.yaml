@@ -10,7 +10,7 @@ jobs:
     - name: "Build image"
       uses: "RadxaOS-SDK/rsdk/.github/actions/build@main"
       with:
-        edition: "${{ matrix.edition }}"
+        edition: "cli"
         github-token: "${{ secrets.GITHUB_TOKEN }}"
         product: "${{ matrix.product }}"
         release-id: "${{ needs.prepare_release.outputs.release_id }}"
